@@ -7,6 +7,12 @@ import * as resources from './resources'
 import resource from './plugins/resource'
 import deviceQueries from './plugins/device-queries'
 import config from './config'
+import VueAnalytics from 'vue-analytics'
+
+Vue.use(VueAnalytics, {
+  id: 'UA-177859948-1',
+  router
+})
 
 Vue.config.productionTip = false
 
