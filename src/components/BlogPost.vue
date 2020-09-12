@@ -23,6 +23,15 @@
   </transition>
 </template>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177859948-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177859948-1');
+</script>
+
 <script>
 import VueDisqus from 'vue-disqus/VueDisqus'
 import { kebabify, prettyDate } from '../helpers'
