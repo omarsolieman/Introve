@@ -1,15 +1,15 @@
 {
   "name": "vue-blog-cosmicjs",
   "version": "1.0.1",
+  "private": true,
   "description": "A simple blog app built using Vue & Vuex. It connects to the Cosmic JS CMS via API. You can manage your content from your Cosmic JS Dashboard.",
   "author": "Jazib Sawar <jazibsawar@gmail.com>",
-  "private": true,
   "scripts": {
-    "dev": "node build/dev-server.js",
-    "start": "node server.js",
     "build": "node build/build.js",
+    "lint": "eslint --ext .js,.vue src",
+    "dev": "node build/dev-server.js",
     "heroku-postbuild": "npm run build",
-    "lint": "eslint --ext .js,.vue src"
+    "start": "node server.js"
   },
   "dependencies": {
     "autoprefixer": "^7.1.2",
@@ -53,6 +53,7 @@
     "pace-progress": "^1.0.2",
     "portfinder": "^1.0.13",
     "postcss-custom-media": "^6.0.0",
+    "register-service-worker": "^1.7.1",
     "rimraf": "^2.6.0",
     "sass-loader": "^6.0.6",
     "scrollto-with-animation": "^4.5.2",
@@ -72,12 +73,15 @@
     "webpack-hot-middleware": "^2.18.2",
     "webpack-merge": "^4.1.0"
   },
-  "engines": {
-    "node": ">= 8.11.3",
-    "npm": ">= 5.0.0"
+  "devDependencies": {
+    "@vue/cli-plugin-pwa": "^4.5.6"
   },
   "browserslist": [
     "last 2 versions",
     "not ie <= 9"
-  ]
+  ],
+  "engines": {
+    "node": ">= 8.11.3",
+    "npm": ">= 5.0.0"
+  }
 }

@@ -8,6 +8,7 @@ import resource from './plugins/resource'
 import deviceQueries from './plugins/device-queries'
 import config from './config'
 import VueAnalytics from 'vue-analytics'
+import './registerServiceWorker'
 
 Vue.use(VueAnalytics, {
   id: 'UA-177859948-1',
